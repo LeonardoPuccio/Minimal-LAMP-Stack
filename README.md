@@ -15,7 +15,6 @@ $ git clone https://github.com/LeonardoPuccio/Minimal-LAMP-Stack my-workspace
 #### GUI
 Simply [download](https://github.com/LeonardoPuccio/Minimal-LAMP-Stack/archive/master.zip) and extract Minimal-LAMP-Stack-master.zip where do you want.
 
-
 ## How to use
 
 #### Start
@@ -29,18 +28,22 @@ $ vagrant halt
 ```
 #### Accesses
 
-##### From browser go to
+##### - From browser go to
 > [http://192.168.33.10/](http://192.168.33.10/)
 or
-> [http://localhost/](http://localhost/)
+> [http://localhost/](http://localhost/)  
+
 to see [phpinfo()](http://php.net/manual/en/function.phpinfo.php).
 
-##### phpmyadmin
+##### - phpMyAdmin
 >[http://192.168.33.10/phpmyadmin/](http://192.168.33.10/phpmyadmin/)
 or [http://localhost/phpmyadmin/](http://localhost/phpmyadmin/)
 
-Is possible access to database from a desktop client such as Sequel Pro or HeidiSQL.
-Remind you need ssh tunneling.
+##### - Shared folder
+The `www` folder is a shared folder synced with `/var/www/html` in ubuntu virtual machine that correspond to default root folder of the web server.
+
+*Is possible access to database from a desktop client such as Sequel Pro or HeidiSQL.
+Remind you need ssh tunneling.*
 
 ## In the box
 - Ubuntu-18.04 (live-server-amd64)
