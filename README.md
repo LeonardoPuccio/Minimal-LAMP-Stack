@@ -1,5 +1,5 @@
 # Minimal LAMP Stack
-Minimal LAMP Stack provide Ubuntu 18.04, Apache, PHP7.1, MySQL, phpMyAdmin in a flexible box for Vagrant.
+Minimal LAMP Stack provide Ubuntu 18.04, Apache, PHP7.1, MySQL and phpMyAdmin in a flexible box for Vagrant.
 
 ## Prerequisites
 
@@ -25,6 +25,12 @@ $ vagrant up
 #### Stop
 ```
 $ vagrant halt
+```
+
+#### Terminal
+*shell into the running Vagrant machine.*
+```
+$ vagrant ssh
 ```
 #### Accesses
 
@@ -69,3 +75,8 @@ Remind you need ssh tunneling.*
 > password: root
 
 *Note: vagrantdb is an user with all privileges on vagrantdb, this for avoid conflict problem with phpmyadmin and access to it.*
+
+## References
+ - [What is VirtualBox?](https://www.virtualbox.org/manual/ch01.html "VirtualBox Doc")
+ - [What is Vagrant?](https://www.vagrantup.com/intro/index.html "Vagrant Doc")
+ - [Why VirtualBox?](https://www.vagrantup.com/docs/providers/default.html "Vagrant Doc")
